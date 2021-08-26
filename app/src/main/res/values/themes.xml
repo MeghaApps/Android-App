@@ -8,7 +8,7 @@
         <item name="postSplashScreenTheme">@style/Theme.Megha</item>
     </style>
     
-    <style name="Theme.Megha" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Megha" parent="Theme.MaterialComponents.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

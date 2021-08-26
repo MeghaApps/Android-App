@@ -14,10 +14,5 @@ class MainActivity : AppCompatActivity() {
 
         installSplashScreen()
         setContentView(R.layout.activity_main)
-
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav_bar)
-        val navController = findNavController(R.id.fragment)
-
-        bottomNavigationView.setupWithNavController(navController)
     }
 }
