@@ -93,7 +93,6 @@ class MainActivity : AppCompatActivity() {
         var maxScore = 0.0
         var cloudCategory = ""
 
-        // TODO : Run a loop and set the category and the max score as the predicted output text.
         for (cloud in probability) {
             val score = cloud.score
             val category = cloud.label
@@ -105,62 +104,50 @@ class MainActivity : AppCompatActivity() {
         when (cloudCategory) {
             "Ac" -> {
                 val value = "Altocumulus"
-                Log.i("Cloud Category", cloudCategory)
                 predictedTextLabel.text = value
             }
             "As" -> {
                 val value = "Altostratus"
-                Log.i("Cloud Category", cloudCategory)
                 predictedTextLabel.text = value
             }
             "Cb" -> {
-                val value = "Cb"
-                Log.i("Cloud Category", cloudCategory)
+                val value = "Cumulonimbus"
                 predictedTextLabel.text = value
             }
             "Cc" -> {
-                val value = "Cc"
-                Log.i("Cloud Category", cloudCategory)
+                val value = "Cirrocumulus"
                 predictedTextLabel.text = value
             }
             "Ci" -> {
-                val value = "Ci"
-                Log.i("Cloud Category", cloudCategory)
+                val value = "Cirrus"
                 predictedTextLabel.text = value
             }
             "Cs" -> {
-                val value = "Cs"
-                    Log.i("Cloud Category", cloudCategory)
+                val value = "Cirrostratus"
                 predictedTextLabel.text = value
             }
             "Ct" -> {
-                val value = "Ct"
-                    Log.i("Cloud Category", cloudCategory)
+                val value = "Contrial"
                 predictedTextLabel.text = value
             }
             "Cu" -> {
-                val value = "Cu"
-                    Log.i("Cloud Category", cloudCategory)
+                val value = "Cumulus"
                 predictedTextLabel.text = value
             }
             "Ns" -> {
-                val value = "Ns"
-                    Log.i("Cloud Category", cloudCategory)
+                val value = "Nimbostratus"
                 predictedTextLabel.text = value
             }
             "Sc" -> {
-                val value = "Sc"
-                    Log.i("Cloud Category", cloudCategory)
+                val value = "Stratocumulus"
                 predictedTextLabel.text = value
             }
             "St" -> {
-                val value = "St"
-                    Log.i("Cloud Category", cloudCategory)
+                val value = "Stratus"
                 predictedTextLabel.text = value
             }
         }
         predictedTextScore.text = maxScore.toString()
-        Log.i("Model Probability", probability.toString())
         model.close()
     }
 }
