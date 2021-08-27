@@ -10,4 +10,12 @@
     <string name="settings_fragment">Settings Fragment</string>
     <string name="clouds_fragment">Clouds Fragment</string>
     <string name="camera_fragment">Camera Fragment</string>
+    <string name="megha_image">Megha Image</string>
+    <string name="click_to_capture_image">Click to capture image</string>
+    <string name="camera_icon">camera icon</string>
+    <string name="tap_to_capture_a_cloud">Tap to capture a cloud</string>
+    <string name="predicted_text">Predicted Text:</string>
+    <string name="please_capture_an_image_to_see_the_prediction">Please capture an image to see the prediction.</string>
+    <string name="scan_another_cloud">Scan another cloud</string>
+    <string name="learn_about_clouds">Learn About Clouds</string>
 </resources>
