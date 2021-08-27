@@ -9,6 +9,5 @@ class Clouds : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         installSplashScreen()
         setContentView(R.layout.activity_clouds)
-        // TODO : Normal linear list with the info of the different types of clouds and their info in a simple card
     }
 }
